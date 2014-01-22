@@ -10,4 +10,8 @@ http://en.wikipedia.org/wiki/Limited-memory_BFGS
 More details can be found from Algorithms 3.2 on page 59 in Numerical Optimization, by Nocedal and Wright
 http://sentientdesigns.net/math/mathbooks/Number%20theory/Numerical%20Optimization%20-%20J.%20Nocedal,%20S.%20Wright.pdf
 
-3. optLBFGS has similar performance with minFunc( with limited-memory BFGS - default)
+3. In example.m, Both optLBFGS and minFunc are used in solving 2 optimization problems(myfun and rosenbrock, the 2D Rosenbrock "banana" function). I believe optLBFGS has similar performance with minFunc( with limited-memory BFGS - default) in most of the cases.
+
+
+Author: Guipeng Li
+Email:  guipenglee@gmail.com
