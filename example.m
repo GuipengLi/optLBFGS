@@ -7,5 +7,12 @@ maxIter = 100;
 % % memsize : 5~20 will be fine
 memsize = 3; 
 tic
-[X,F,k] =optLBFGS(@myfun,x0,maxIter,memsize);
+[X,F,k] =optLBFGS(@myfun,x0,maxIter,memsize)
 toc
+
+% another example ,the 2D Rosenbrock "banana" function
+% http://www.di.ens.fr/~mschmidt/Software/minFunc.html
+D = 20;
+x1 = zeros(D,1);
+[X1,F1,k1] =optLBFGS(@rosenbrock,x1,200,5);
+[X2,F2]  = minFunc(@rosenbrock,x1);
